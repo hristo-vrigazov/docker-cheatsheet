@@ -35,3 +35,15 @@ docker run -it -p 1880:1880 --name mynodered nodered/node-red-docker
 ```bash
 docker cp . 61e6ed03aa66:/home/scientist/.
 ```
+
+* Run a container connected to your display with given name 
+
+```bash
+docker run -it --name opencv --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw"  tsutomu7/python-opencv
+```
+
+* Find the id of a container by name
+
+```bash
+sudo docker ps -aqf "name=opencv"
+```
