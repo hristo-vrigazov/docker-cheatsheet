@@ -29,3 +29,9 @@ docker run -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-un
 ```bash
 docker run -it -p 1880:1880 --name mynodered nodered/node-red-docker
 ```
+
+* Copy current folder into docker container's home folder
+
+```bash
+docker cp . 61e6ed03aa66:/home/scientist/.
+```
