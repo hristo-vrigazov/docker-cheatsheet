@@ -60,11 +60,18 @@ docker rmi -f $(docker images -a -q)
 ```
 
 * Remove a docker image
+
 ```bash
 docker rmi ubuntu
 ```
 
 * Build a docker image by a Dockerfile
+
 ```bash
 docker build -t example .
+```
+
+* Run an image
+```bash
+docker run example
 ```
