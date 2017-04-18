@@ -48,6 +48,11 @@ docker run -it --name opencv --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume
 sudo docker ps -aqf "name=opencv"
 ```
 
+* List all images
+```bash
+docker images
+```
+
 * Remove all docker images
 
 ```bash
@@ -57,4 +62,9 @@ docker rmi -f $(docker images -a -q)
 * Remove a docker image
 ```bash
 docker rmi ubuntu
+```
+
+* Build a docker image by a Dockerfile
+```bash
+docker build -t example .
 ```
