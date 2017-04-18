@@ -72,6 +72,36 @@ docker build -t example .
 ```
 
 * Run an image
+
 ```bash
 docker run example
+```
+
+* Tag an existing local image
+
+```bash
+docker tag e379ad0b10e0 hvrigazov/example:latest
+```
+
+* Steps needed to create a docker image and push it to docker hub
+
+1. Go to docker hub site and create the repository, say 'hvrigazov/example'
+2. Create a Dockerfile locally and build it
+3. See the id of the image:
+```bash
+docker images
+```
+4. Tag it:
+```bash
+docker tag e379ad0b10e0 hvrigazov/example:latest
+```
+
+5. Login:
+```bash
+docker login
+```
+
+6. Push
+```bash
+docker push hvrigazov/example
 ```
