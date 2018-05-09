@@ -39,6 +39,7 @@ docker cp . 61e6ed03aa66:/home/scientist/.
 * Run a container connected to your display with given name 
 
 ```bash
+xhost local:root
 docker run -it --name opencv --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw"  tsutomu7/python-opencv
 ```
 
