@@ -3,7 +3,7 @@
 * Run bash inside a container
 
 ```bash
-docker run -it tsutomu7/python-opencv
+docker run -it tsutomu7/python-opencv bash
 ```
 
 * Remove all docker containers
